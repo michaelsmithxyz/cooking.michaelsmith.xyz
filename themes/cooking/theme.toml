@@ -1,0 +1,10 @@
+name = "Cooking"
+description = ""
+homepage = "https://github.com/michaelsmithxyz/cooking.michaelsmith.xyz"
+tags = []
+features = []
+min_version = "0.40"
+
+[author]
+  name = "Michael Smith"
+  homepage = "https://michaelsmith.xyz"

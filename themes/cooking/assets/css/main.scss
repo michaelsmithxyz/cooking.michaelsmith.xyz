@@ -1,0 +1,63 @@
+@import "partials/_webfonts.scss";
+
+// Fonts
+$system-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+$font-size-base: 16px;
+
+$font-size-sm: 0.8rem;
+$font-size-normal: 1rem;
+
+$font-weight-base: 400;
+
+// Colors
+$color-background: rgb(249, 249, 249);
+
+$color-text: rgb(30, 20, 12);
+$color-text-light: rgb(97, 97, 97);
+$color-text-lightest: rgb(197, 197, 197);
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $system-fonts;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+
+    background-color: $color-background;
+    color: $color-text;
+
+    // Layout
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+
+// Footer
+
+.site-footer {
+    font-size: $font-size-sm;
+
+    color: $color-text-lightest;
+
+    padding: 10px 0;
+    
+    align-self: center;
+
+    & a {
+        color: $color-text-light;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+}

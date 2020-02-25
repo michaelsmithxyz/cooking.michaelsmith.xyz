@@ -1,0 +1,7 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ $reset := resources.Get "css/reset.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $reset.Permalink }}" integrity="{{ $reset.Data.Integrity }}" />
+{{ $main := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}" />
