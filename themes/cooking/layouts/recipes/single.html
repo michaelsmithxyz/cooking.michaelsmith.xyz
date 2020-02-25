@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+    {{ with .Params.Ingredients }}
+    <section class="recipe-ingredients">
+        <ul class="ingredients-list">
+            {{ range . }}
+                <li class="ingredient">
+                    <span class="ingredient-quantity">
+                        {{ index . "quantity" }}
+                    </span>
+                    <span class="ingredient-unit">
+                        {{ index . "unit" }}
+                    </span>
+                    <span class="ingredient-ingredient">
+                        {{ index . "ingredient" }}
+                    </span>
+                </li>
+            {{ end }}
+        </ul>
+    </section>
+    {{ end }}
+
+    {{ .Content }}
+</article>
+{{ end }}
